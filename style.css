@@ -33,3 +33,31 @@ header{
     background-color: blueviolet;
 }
 
+a {
+    color: black;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    }
+    
+    @media (max-width: 767px) {
+    .container {
+    flex-direction: column;
+    }
+}
+
