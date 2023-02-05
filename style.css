@@ -1,0 +1,35 @@
+.box{
+    width: 100%;
+    max-width: 1024px;
+    padding: 20%;
+}
+
+.box::after{
+    content: '';
+    display: block;
+    padding: 20%;
+}
+
+body{
+    background-color: beige;
+    font-family: 'Roboto', sans-serif;
+}
+
+figure{
+    margin: 0px;
+}
+
+figure img {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+header{
+    color: azure;
+    background-color: blueviolet;
+}
+
