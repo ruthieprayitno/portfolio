@@ -1,0 +1,32 @@
+.box{
+    width: 100%;
+    max-width: 1024px;
+    padding: 20%;
+}
+
+.box::after{
+    content: '';
+    display: block;
+    padding: 20%;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    line-height: 2.2em;
+    text-indent: 3em;
+}
+
+p:first-child {text-indent:0;}
+
+header{
+    background-color: lavender;
+}
+
+footer{
+    background-color: black;
+   color: aliceblue;
+}
+
