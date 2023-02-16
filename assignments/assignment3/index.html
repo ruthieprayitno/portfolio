@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body id="body-main">
+    <!--code from https://www.devbabu.com/css-responsive-navigation-bar-with-logo/-->
+    <!--nav-->
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="Volcanoasianbistro.com"></a>
+            </div>
+            <div class="navbar">
+                <div class="close-nav"><button>×</button></div>
+                <nav>
+                    <ul>
+                        <li><a href="../assignment3/index.html">Home</a></li>
+                        <li><a href="../assignment3/about.html">About</a></li>
+                        <li><a href="../assignment3/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-bar">
+                <button><i></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Content -->
+    </div>
+    <script>
+        const theBody = document.querySelector('body');
+        const openNav = document.querySelector('.menu-bar button');
+        const closeNav = document.querySelector('.close-nav button');
+        const Navbar = document.querySelector('.navbar');
+
+        // function bodyScroll(){
+        //     if(Navbar.classList.contains('show')){
+        //         theBody.classList.add('hide-scroll');
+        //     }
+        //     else if(theBody.classList.contains('hide-scroll')){
+        //         theBody.classList.remove('hide-scroll');
+        //     }
+        // }
+
+        function showHide(){
+            Navbar.classList.toggle('show');
+            // bodyScroll();
+        }
+
+        openNav.onclick = showHide;
+        closeNav.onclick = showHide;
+    </script>
+
+    <div>
+        <h1>
+            Volcano Asian Bistro
+        </h1>
+        <h2>
+            Mission Statement
+        </h2>
+    </div>
+    <!--gallery-->
+    <!--ul class="container">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+    </ul-->
+
+    <div class="container">
+        <!--project container-->
+        <div class="column">
+        <!--Food 1-->
+            <a href="page1.html" class="item item1"></a>
+            <!--img src="../assignment3/assets/Vi.png"--> 
+            <p class="date">November - December 2020</p>
+            <p class="description">World Without Words</p>
+            </div>
+
+            <div class="column">
+        <!--Food 2-->
+            <a href="page2.html" class="item item2" target="_blank"></a>
+            <p class="date">September - December 2021</p>
+            <p class="description">Indpendent Case Study</p>
+            </div>
+
+            <div class="column">
+        <!--Food 3-->
+            <a href="page3.html" class="item item3" target="_blank"></a>
+            <p class="date">December - March 2020</p>
+            <p class="description">Fun Geocity Project</p>
+        </div>
+    
+        <div class="column">
+        <!--Food 4-->
+        <a href="page4.html" class="item item4" target="_blank"></a>
+        <p class="date">April - May 2022</p>
+        <p class="description">Website Redesign</p>
+        </div>
+
+        <div class="column">
+        <!--Food 5-->
+        <a href="page5.html" class="item item5" target="_blank"></a>
+        <p class="date">April - May 2022</p>
+        <p class="description">Website Redesign</p>
+        </div>
+
+        <div class="column">
+        <!--Food 6-->
+        <a href="page6.html" class="item item6" target="_blank"></a>
+        <p class="date">April - May 2022</p>
+        <p class="description">Website Redesign</p>
+        </div>
+    </div>
+</body>
+</html>
