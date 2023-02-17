@@ -52,7 +52,8 @@ header .wrapper {
     justify-content: space-between;
 }
 header .logo img {
-    height: 100px;
+    height: auto;
+    width: 50%;
     display: block;
 }
 
@@ -159,7 +160,6 @@ white;
 #222222;
 }
 
-
 @media (min-width: 550px) {
     .navbar {
         all: unset;
@@ -191,16 +191,16 @@ img {
     justify-content: space-evenly;
     align-items: stretch;
     align-content: space-evenly;
-    gap: 10%;
-    max-width: 900px;
+    gap: 5%;
+    max-width: 1050px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 5%;
 }
 
 .item{
     flex-grow: 1;
-    flex: 1 0 calc(33.333% - 20px); 
-    max-width: calc(33.333% - 20px);
+    flex: 1 0 calc(25% - -100px); 
+    max-width: calc(25% - -100px);
     align-self: auto;
 }
 
@@ -225,7 +225,6 @@ img {
 }
 
 .column {
-    background: none;
     padding: 1em;
     margin: 0;
     display: flex;
@@ -233,6 +232,7 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: left;
+    width: 25%;
 }
 
 /*project description*/
@@ -292,14 +292,15 @@ p.date  {
 #body-food{
   background-color: bisque;
   color: black;
+  font-family: "Open Sans", sans-serif;
 }
 
 #container {
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20%;
     }
 
     @media (max-width: 767px) {
@@ -330,7 +331,7 @@ figure{
 
 figure img {
     width: 100%;
-    max-height: 628px;
+   height: auto;
 }
 
 figcaption{
@@ -376,15 +377,15 @@ figcaption{
   }
   
   .place {
-    margin-left: 62px;
+    margin-left: 10%;
   }
   
   .phone {
-    margin-left: 56px;
+    margin-left: 10%;
   }
   
   .gmail {
-    margin-left: 53px;
+    margin-left: 10%;
   }
   
   .contact-text a {
@@ -417,4 +418,68 @@ ul > li
     list-style-type: none;
 }
   
+/*about styling*/
+#body-about{
+    background-color: bisque;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+  }
   
+  #container {
+      display: flex;
+      flex-direction: column;
+      padding-left: 20%;
+      padding-right: 20%;
+      padding-bottom: 20%;
+      }
+  
+      @media (max-width: 767px) {
+      .container {
+      flex-direction: column;
+      }
+  }
+  
+  h1{
+      text-align: center;
+      font-size: 72px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+  
+  h2{
+      text-align: center;
+  }
+  
+  /*caption size*/
+  figure{
+      margin: 0px;
+  }
+  
+  figure img {
+      width: 100%;
+      max-height: auto;
+  }
+  
+  figcaption{
+      font-size: .75em;
+  }
+  
+  /*styling for contact*/
+  #vertical-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    gap: 5%;
+    }
+    
+    @media (max-width: 767px) {
+    .container {
+    flex-direction: column;
+    }
+  }
