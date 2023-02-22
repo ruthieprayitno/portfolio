@@ -1,0 +1,114 @@
+/*Erik template code*/
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+    background-color: #ffe6cc;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 2em;
+}
+
+/*flexbox*/
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#banner{
+ margin-left: 0px;
+ margin-right: 0px;
+}
+
+.verse{
+    padding-left: .5em;
+}
+
+footer{
+    font-size: .75em;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+#rabbit{
+    height: auto;
+    width: 3vw;
+}
+
+figcaption{
+    font-size: .25em;
+}
+
+main{
+    float: left;
+    width: 70%;
+    margin-bottom: 100px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    padding-top: 10%;
+    width: 100%;
+}
+
+/*first CSS Interaction*/
+.mouse-follower{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 1;
+}
+
+/*2nd CSS Interaction*/
+#house{
+    height: 100%;
+    width: 10vw;
+    float: right;
+    position: relative;
+}
+
+#house img:hover {
+    transform: rotate(-50deg) translate(0, -50px);
+    transition: transform 0.5s ease-in-out;
+  }
+
+/*3rd CSS Interaction*/
+@keyframes animal-run {
+    0% {
+      left: -100px; /* Start position outside the left edge of the screen */
+    }
+    100% {
+      left: calc(100% + 100px); /* End position outside the right edge of the screen */
+    }
+  }
+
+  /* Define the animal class with absolute positioning */
+  .animal {
+    position: absolute;
+    top: 50%; /* Position the animal in the middle of the screen vertically */
+    transform: translate(-50%, -50%);
+  }
+
+  /* Apply the animation to the animal class */
+  .animal.run {
+    animation-name: animal-run;
+    animation-duration: 10s; /* Duration of the animation */
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; /* Stay at the end position after the animation ends */
+    animation-delay: 5s; /* Delay before the animation starts */
+  }
