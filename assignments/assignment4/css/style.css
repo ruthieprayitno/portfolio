@@ -20,6 +20,33 @@ html {
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
+    position: relative;
+}
+
+/*footer*/
+footer{
+    background-color: lightgray;
+    height: 50px;
+    width: 100%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-bottom: 0em;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    position: fixed; /* add this */
+    bottom: 0;
+}
+footer a{
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+footer a:hover{
+text-decoration-line:underline;
 }
 
 #banner{
@@ -55,13 +82,6 @@ main{
     margin-bottom: 100px;
 }
 
-footer{
-    position: absolute;
-    bottom: 0;
-    padding-top: 10%;
-    width: 100%;
-}
-
 /*first CSS Interaction*/
 .mouse-follower{
     position: fixed;
@@ -88,27 +108,30 @@ footer{
   }
 
 /*3rd CSS Interaction*/
-@keyframes animal-run {
+.verse.moving-text {
+    position: relative;
+    animation-name: move-text;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 5s;
+  }
+  
+  @keyframes move-text {
     0% {
-      left: -100px; /* Start position outside the left edge of the screen */
+      left: 0;
     }
     100% {
-      left: calc(100% + 100px); /* End position outside the right edge of the screen */
+      left: 50px;
     }
   }
 
-  /* Define the animal class with absolute positioning */
-  .animal {
-    position: absolute;
-    top: 50%; /* Position the animal in the middle of the screen vertically */
-    transform: translate(-50%, -50%);
-  }
+.newp1:hover{
+    background-color: pink;
+    color: black;
+}
 
-  /* Apply the animation to the animal class */
-  .animal.run {
-    animation-name: animal-run;
-    animation-duration: 10s; /* Duration of the animation */
-    animation-timing-function: linear;
-    animation-fill-mode: forwards; /* Stay at the end position after the animation ends */
-    animation-delay: 5s; /* Delay before the animation starts */
-  }
+.newp2:hover{
+    background-color: lavender;
+    color: black;
+}
