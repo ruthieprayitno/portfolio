@@ -1,0 +1,85 @@
+/*Erik template code*/
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+	/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 2em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/*desktop*/
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20%;
+    background-color: aliceblue;
+}
+
+.item {
+    width: 30%;
+}
+
+/*mobile*/
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
+
+/*images*/
+img{
+    width: 25vw;
+    height: auto;
+}
+
+figure {
+    margin: 0px;
+}
+
+figure img {
+    width: 100%;   
+    max-height: 400px;
+    min-height: 400px;
+    object-fit: cover;
+    justify-content: center;
+}
+
+header{
+    background-color: white;
+}
+
+/*code from view-source:https://solomonv01.github.io/webdev2repository/assignment3/index.html*/
+/*cards*/
+nav{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+nav section {
+    border: 2px solid #c7a38f;
+    min-height: 600px;
+    background-color: #c7a38f;
+
+}
+
+nav section p {
+    padding: 1rem;
+}
+
+nav section h1 {
+    padding: 1rem;
+}

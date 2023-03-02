@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&family=Roboto:wght@300&family=Rubik+Iso&display=swap" rel="stylesheet">
+      <!--run JS file-->
+      <script src="script.js"></script>
+    <title>About Cats</title>
+</head>
+
+ <!--header-->
+ <header>
+    <h1>
+        FUNNY IMAGES
+    </h1>
+</header>
+
+<body class="container">
+    <!--main-->
+         <!--found content (text, video, image)-->
+         <p>
+            These are just some funny photos I have that you can show and hide using the buttons.
+         </p>
+
+    <nav>
+         <section >
+            <!--button 1-->
+            <button id="button1" type="button">SHOW</button>
+            <button id="button2" type="button">HIDE</button>
+            <!--hidden content 1-->
+            <figure class="response" id="cat">
+             <img src="images/cat.jpeg" alt="cat">
+            </figure>
+         </section>
+
+        <section>
+             <!--button 2-->
+            <button id="button3" type="button">SHOW</button>
+            <button id="button4" type="button">HIDE</button>
+            <!--hidden content 2-->
+            <figure class="response" id="mymelo">
+                <img src="images/mymelo.jpeg" alt="my melody">
+            </figure>
+        </section>
+
+        <section>
+            <!--button 3-->
+            <button id="button5" type="button">SHOW</button>
+            <button id="button6" type="button">HIDE</button>
+            <!--hidden content 3-->
+            <figure class="response" id="pikachu">
+                <img src="images/pikachu.jpeg" alt="pikachu">
+            </figure>
+        </section>
+    </nav>
+
+    <!--Link JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+    
+    <!--Write your Jquery Code-->
+    <script>
+        $(document).ready(function() {
+            $('figure#cat').hide();
+
+            $('figure#mymelo').hide();
+
+            $('figure#pikachu').hide();
+
+            $('button#button1').click(function() {
+                $('figure#cat').show();
+
+            }); //show.click
+
+            $('button#button2').click(function() {
+                $('figure#cat').hide();
+
+            }); //hide.click
+
+            $('button#button3').click(function() {
+                $('figure#mymelo').show();
+
+            }); //show.click
+
+            $('button#button4').click(function() {
+                $('figure#mymelo').hide();
+
+            }); //hide.click
+
+            $('button#button5').click(function() {
+                $('figure#pikachu').show();
+
+            }); //show.click
+
+            $('button#button6').click(function() {
+                $('figure#pikachu').hide();
+
+            }); //hide.click
+            
+        });//close.ready()
+    </script>
+</body>
+</html>
