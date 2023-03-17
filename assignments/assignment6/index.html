@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll</title>
+</head>
+<body>
+    <!--header-->
+    <header id="main-header" class="column">
+        <h1>
+            BearBiz
+        </h1>
+        <h2>
+            by Ruthie Prayitno
+        </h2>
+    </header>
+
+    <!--main-->
+    <main class="container">
+        <!--parallx dis 1-->
+        <section  id ="bb1" class="column">
+            <h1>
+                Scroll
+            </h1>
+        </section> 
+
+        <p class="column" >
+            Bear Biz is a prototype that will act as an employee that can incur empathy and understanding in users that they are helping small businesses. It is an integrated open-source application that includes cash app transactions, customizable menu options, warehouse and inventory management, supply chain management, financial management, business intelligence and transferable mobility. It supports technical help and incorporates human interaction. 
+            This thesis aims to clarify the media’s stereotype of business owners and divert the viewers’ schema of mainstream entrepreneurs. The demographic is not just made up of the upper class and nepotism, but also the working class. 
+        </p>
+
+        <p class="column">
+            New small business owners struggle with the transition from the employee to the employer. 
+            “A recent article entitled "Can you afford an employee" from the Danish magazine "The Springer Entrepreneur" estimates that the total cost of the first employee is 13.5 % of the wage paid because of expenses related to payroll system, additional equipment, insurance, social security contributions, additional administration cost, etc., without even taking into account the opportunity cost of the entrepreneur training the first employee (Sand and Paske 2010)” (Springer pg.3). 
+        </p>
+
+        <p class="column">
+            The first employee is difficult to grasp and keep because they require the owner to take risks, such as trusting an important task like watching over the cash register and paying an employee that may not even have the required skills initially. Hiring a fresh, new employee is an investment that entails a risk for the owner which will not bring in initial revenue, but actually take out costs, such as buying a POS system to ensure that the employee is paid on time and that they do not steal. The employee may also decide that the job is not a good fit for them and look for employment elsewhere. However, an employee is needed because they are an additional resource that will help when products and services of the business are in demand. 
+            “The Small Business Administration (SBA) defines small businesses on the basis of a firm's annual net receipts or employment... in general, businesses can employ no more than 500 employees on average during the past twelve months to be considered small” (National Tax Journal 2013). 
+        </p>
+
+        <p class="column">
+            Think about this: When you go to your local neighborhood Walmart, how many self-checkouts do you see? There are at least 10 to 15. Now multiply that by the number of stores that Walmart has in each state. There are over 10,000 self-checkouts in hundreds of stores. In conclusion, big time CEOS that the media targets, such as Jeff Bezos and Doug McMillon do not have to comply with overtime rule changes, wages, or vaccine mandates because they can afford to hire talented tech teams that create technology to do so. They can provide more benefits and pay workers because they do not have that many employees in their stores in the first place. Now that they have all the machines, allocation of finances is made towards laws cutting preexisting tax breaks and supermarkets can be seen as “small” because they are less than 500 employees who are not machines. There are not that many tech companies that are working towards making products for small businesses or communities because the truth is that they do not have that much money to invest in their personal tech teams that are constantly updating their services and software to fit clients’ and company needs. 
+        </p>
+
+        <p class="column">
+            Using Bear Biz, small business owners can have the technology and branding big businesses use. There are options that work with their needs and are customizable to create their wanted branding. 
+        </p>
+        <!--parallx dis 2-->
+        <section  id ="bb2" class="column">
+            <h1>
+                End
+            </h1>
+        </section> 
+
+        <button class="scroll-to-top">Scroll to Top</button>
+    </main>
+
+    <!--Link JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+
+    <!--Write your Jquery Code-->
+    <script>
+       $(document).ready(function() {
+        window.addEventListener('scroll', function() {
+            var myElement = document.getElementById('bb1');
+            if (window.scrollY > 0) {
+                myElement.style.color = 'black';
+            } else {
+                myElement.style.color = 'white';
+            }
+            });//color.scroll
+
+            window.addEventListener('scroll', function() {
+            var myElement = document.getElementById('bb2');
+            if (window.scrollY > 0) {
+                myElement.style.color = 'white';
+            } else {
+                myElement.style.color = 'black';
+            }
+            });//color.end
+
+        window.addEventListener('scroll', function() {
+            var myElement = document.getElementById('main-header');
+            if (window.scrollY > 0) {
+                myElement.style.backgroundColor = 'white';
+            } else {
+                myElement.style.backgroundColor = 'lavender';
+            }
+            });
+
+
+            const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+                window.addEventListener('scroll', () => {
+                if (window.scrollY > 100) {
+                    scrollToTopButton.style.display = 'block';
+                } else {
+                    scrollToTopButton.style.display = 'none';
+                }
+                });
+
+                scrollToTopButton.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+
+        }); //close .ready()
+    </script>
+</body>
+</html>
