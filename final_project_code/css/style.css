@@ -1,24 +1,26 @@
 /*responsive*/
-.box{
-    width: 100%;
-    max-width: 1024px;
-    padding: 10%;
-}
-.box::after{
-    content: '';
-    display: block;
-    padding: 10%;
-}
-.container{
-    display: flex;
-    flex-direction: row;
-    }
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* sets two equal columns */
+    grid-gap: 20px; /* adds some space between the columns */
+  }
+  
+  .left, .right {
+    padding: 20px;
+    background-color: none;
+  }
 
-    @media (max-width: 767px){
-        .container{
-            flex-direction: column;
-        }
+  .left{
+    transform: translateY(20%);
+  }
+  
+  @media (max-width: 768px) {
+    /* switch to a one-column layout on smaller screens */
+    .container {
+      grid-template-columns: 1fr;
+    }
 }
+  
 
 /*images*/
 figure img{
@@ -29,6 +31,9 @@ figure img{
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 body{
     font-family: 'Inter', sans-serif;
+}
+h2{
+    color: orange;
 }
 
 /*Poem*/
@@ -53,5 +58,24 @@ body{
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+
+/*backgrounds*/
+#home {
+    background: url(../images/home.png) no-repeat fixed center;
+    background-size: cover;
+}
+#dani {
+    background: url(../images/dani.png) no-repeat fixed center;
+    background-size: cover;
+}
+#edward {
+    background: url(../images/edward.png) no-repeat fixed center;
+    background-size: cover;
+}
+#nyah {
+    background: url(../images/nyah.png) no-repeat fixed center;
+    background-size: cover;
+}
+  
 
 /*Parallax display*/
