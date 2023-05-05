@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body class="container">
+    <!--header-->
+     <!--nav bar-->
+
+    <!--main-->
+   <main class="box">
+        <h1>Nostalgia in</h1>
+        <h2>Prose</h2>
+        
+        <p>
+            Turning points are important because they can initiate significant personal growth and change.
+
+            Who are you?
+            How as a person are you connected to me?
+            Can you share a significant turning point in your life and how it impacted you?
+            Was there a specific person or mentor who played a role in this turning point in
+            your life?
+            If you could go back and change this turning point or any others in your life would
+            you? If so, why?
+        </p>
+
+        <!--button navigation-->
+        <button id="myButton">Read</button>
+
+        <!--hero image-->
+        <figure>
+            <img src="images/hero image.jpg" alt="Girl walking up stairs">
+        </figure>
+
+        <!--footer-->
+        <footer>
+            &copy;Ruthie 2023
+        </footer>
+   </main>
+
+    <!--Link JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+
+    <!--write JQuery Code-->
+    <script>
+     $(document).ready(function() {
+        $("#myButton").click(function() {
+            window.location.href = "dani.html";
+        });
+    });
+    </script>
+</body>
+</html>

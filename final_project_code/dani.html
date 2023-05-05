@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--header-->
+    <!--nav bar-->
+    <!--main-->
+    <main id="parent_box">
+       <div id="child_box">
+        <h1 class="verse">Daniela Castro</h1>
+
+        <p class="verse">
+            From Mexico to the States I came, <br />
+            A Latina with a unique name,<br />
+            Raised in a land so far away,<br />
+            But here I found my place to stay.<br />
+        </p>
+        <p class="verse">
+            My dreams were once to teach the young,<br />
+            But dance and art soon took the tongue,<br />
+            I followed my heart, not others' voices,<br />
+            And found a life filled with choices.<br />
+        </p>
+        <p class="verse">
+            In Chicago, I found a friend,<br />
+            Whose talent never seems to end,<br />
+            Dani, an artist and dancer too,<br />
+            Who makes this city feel brand new.<br />
+        </p>
+        <p class="verse">
+            With family and friends by my side,<br />
+            I found the strength to take my stride,<br />
+            To live my life the way I choose,<br />
+            And never let others dim my hues.<br />
+        </p>
+        <p class="verse">
+            With family and friends by my side,<br />
+            I found the strength to take my stride,<br />
+            To live my life the way I choose,<br />
+            And never let others dim my hues.<br />
+            I live by a motto that rings true,<br />
+            "Everything happens for a reason," too,<br />
+            And though I may not always see,<br />
+            I trust in fate and destiny.<br />
+        </p>
+        <p class="verse">
+            So, if I could go back in time,<br />
+            I wouldn't change a thing in my rhyme,<br />
+            But observe those moments with a new eye,<br />
+            To better understand how and why.<br />     
+        </p>
+
+            <!--button navigation-->
+            <button id="previousButton">Previous</button>
+            <button id="nextButton">Next</button>
+       </div>
+    </main>
+
+     <!--Link JQuery-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+
+     <!--write JQuery Code-->
+     <script>
+      $(document).ready(function() {
+         $("#previousButton").click(function() {
+             window.location.href = "index.html";
+         });
+
+         $("#nextButton").click(function() {
+             window.location.href = "edward.html";
+         });
+     });
+     </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+/*responsive*/
+.box{
+    width: 100%;
+    max-width: 1024px;
+    padding: 10%;
+}
+.box::after{
+    content: '';
+    display: block;
+    padding: 10%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    }
+
+    @media (max-width: 767px){
+        .container{
+            flex-direction: column;
+        }
+}
+
+/*images*/
+figure img{
+    width: 100%;
+}
+
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+/*Poem*/
+.verse{
+    padding-left: .5em;
+    text-align: center;
+}
+
+#parent_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10%;
+}
+
+#child_box{
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/*Parallax display*/

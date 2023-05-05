@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--header-->
+     <!--nav bar-->
+    <!--main-->
+    <main id="parent_box">
+        <div id="child_box">
+            <h1 class="verse">Nyah Maree</h1>
+
+            <p class="verse">
+                A small town life was all she knew<br />
+                But dreams and ambitions started to brew<br />
+                Her grandma's spirit was strong and true<br />
+                And soon Nyah knew what she had to do<br />
+            </p>
+            <P class="verse">
+                She packed her bags and left her home<br />
+                In search of a life that she could own<br />
+                Chicago was where she wanted to roam<br />
+                To pursue a career in film, she was grown<br />
+            </P>
+            <P class="verse">
+                Her college years were filled with delight<br />
+                Good roommates and memories that were bright<br />
+                She found her passion, her creative might<br />
+                And knew that this was her guiding light<br />
+            </P>
+            <P class="verse">
+                When asked if she would change a thing<br />
+                Nyah replied with a humble ring<br />
+                Her experiences both good and bad bring<br />
+                Her current morals and thoughts that sing<br />
+            </P>
+            <P class="verse">
+                Moving forward, she'll pave her way<br />
+                With her camera, she'll capture each day<br />
+                Her dreams and ambitions will never sway<br />
+                For Nyah knows she'll make it one day.<br />
+            </p>
+
+            <!--button navigation-->
+            <button id="previousButton">Previous</button>
+            <button id="turnButton">Turn</button>
+        </div>
+    </main>
+
+    <!--Link JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+
+    <script>
+        $(document).ready(function() {
+            $("#previousButton").click(function() {
+                window.location.href = "edward.html";
+            });
+    
+            $("#turnButton").click(function() {
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+</body>
+</html>
