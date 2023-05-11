@@ -1,4 +1,38 @@
 <!DOCTYPE html>
+<!--header-->
+<!--navigation bar-->
+<header class='masthead'>
+    <div class='brand-container'>
+      <a href='index.html'>
+        <span class='brand-initials'>RP</span>
+        <span class='brand-name'>Home</span>
+      </a>
+    </div>
+    <nav>
+      <div class='nav-container'>
+        <div>
+          <input id='slider1' name='slider1' type='checkbox'>
+          <label class='slide has-child' for='slider1'>
+            <span class='element'>D</span>
+            <span class='name'><a href="dani.html">Dani</a></span>
+          </label>
+        </div>
+        <div>
+            <input id='slider2' name='slider2' type='checkbox'>
+            <label class='slide has-child' for='slider2'>
+              <span class='element'>E</span>
+              <span class='name'><a href="edward.html">Edward</a></span>
+            </label>
+        </div>
+        <div>
+            <input id='slider3' name='slider3' type='checkbox'>
+            <label class='slide has-child' for='slider3'>
+              <span class='element'>N</span>
+              <span class='name'><a href="nyah.html">Nyah</a></span>
+            </label>
+        </div>
+  </header>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,10 +41,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Document</title>
-</head>
+</head> 
+
 <body id= "home" class="container">
-    <!--header-->
-     <!--nav bar-->
 
     <!--main-->
    <main class="left">
@@ -28,9 +61,6 @@
             If you could go back and change this turning point or any others in your life would
             you? If so, why?
         </p>
-
-        <!--button navigation-->
-        <button id="myButton">Read</button>
 
         <!--footer-->
         <footer>
@@ -50,11 +80,11 @@
 
     <!--write JQuery Code-->
     <script>
-     $(document).ready(function() {
-        $("#myButton").click(function() {
-            window.location.href = "dani.html";
-        });
-    });
+     //$(document).ready(function() {
+       // $("#myButton").click(function() {
+            //window.location.href = "dani.html";
+        //});
+    //});
     </script>
 </body>
 </html>

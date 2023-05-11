@@ -7,12 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<!--header-->
+<!--navigation bar-->
+<header class='masthead'>
+    <div class='brand-container'>
+      <a href='index.html'>
+        <span class='brand-initials'>RP</span>
+        <span class='brand-name'>Home</span>
+      </a>
+    </div>
+    <nav>
+      <div class='nav-container'>
+        <div>
+          <input id='slider1' name='slider1' type='checkbox'>
+          <label class='slide has-child' for='slider1'>
+            <span class='element'>D</span>
+            <span class='name'><a href="dani.html">Dani</a></span>
+          </label>
+        </div>
+        <div>
+            <input id='slider2' name='slider2' type='checkbox'>
+            <label class='slide has-child' for='slider2'>
+              <span class='element'>E</span>
+              <span class='name'><a href="edward.html">Edward</a></span>
+            </label>
+        </div>
+        <div>
+            <input id='slider3' name='slider3' type='checkbox'>
+            <label class='slide has-child' for='slider3'>
+              <span class='element'>N</span>
+              <span class='name'><a href="nyah.html">Nyah</a></span>
+            </label>
+        </div>
+</header>
 <body id="nyah">
-    <!--header-->
-     <!--nav bar-->
     <!--main-->
-    <main id="parent_box">
-        <div id="child_box">
+    <main class="parent_box">
+        <div class="nyah_box">
             <h1 class="verse">Nyah Maree</h1>
 
             <p class="verse">
@@ -45,10 +76,6 @@
                 Her dreams and ambitions will never sway<br />
                 For Nyah knows she'll make it one day.<br />
             </p>
-
-            <!--button navigation-->
-            <button id="previousButton">Previous</button>
-            <button id="turnButton">Turn</button>
         </div>
     </main>
 
@@ -56,15 +83,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
 
     <script>
-        $(document).ready(function() {
-            $("#previousButton").click(function() {
-                window.location.href = "edward.html";
-            });
-    
-            $("#turnButton").click(function() {
-                window.location.href = "index.html";
-            });
-        });
+        //$(document).ready(function() {
+            // $("#myButton").click(function() {
+                    //window.location.href = "dani.html";
+                //});
+            //});
     </script>
 </body>
 </html>
