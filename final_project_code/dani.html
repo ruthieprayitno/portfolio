@@ -88,6 +88,11 @@
             To better understand how and why.<br />     
         </p>
        </div>
+
+        <!--music-->
+        <audio id="background-music" loop>
+        <source src="audio/Spanish_allegoria_-_Alain_Caylus_(2).mp3" type="audio/mpeg">
+      </audio>   
     </main>
 
      <!--Link JQuery-->
@@ -95,11 +100,8 @@
 
      <!--write JQuery Code-->
      <script>
-        //$(document).ready(function() {
-            // $("#myButton").click(function() {
-                    //window.location.href = "dani.html";
-                //});
-            //});
+      var backgroundMusic = document.getElementById("background-music");
+      backgroundMusic.play();
      </script>
 </body>
 </html>

@@ -95,17 +95,18 @@
                 With an altruistic mindset, our goals come alive.<br />
             </p>
         </div>
+
+        <!--music-->
+        <audio id="background-music" loop>
+        <source src="audio/Bimoxn_-_ChillFi_-_a_sad_Lofi_song_-_Bimoxn.mp3" type="audio/mpeg">
     </main>
 
     <!--Link JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
 
     <script>
-        //$(document).ready(function() {
-            // $("#myButton").click(function() {
-                    //window.location.href = "dani.html";
-                //});
-            //});
+    var backgroundMusic = document.getElementById("background-music");
+    backgroundMusic.play();
     </script>
 </body>
 </html>
