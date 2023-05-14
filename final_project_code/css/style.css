@@ -170,22 +170,61 @@ a {
     color: blue;
   }
   /*end red*/
-  
-  /* yellow */
   nav div.nav-container > div:nth-of-type(5n+3) .slide, nav div.nav-container > div:nth-of-type(5n+3) a {
-    border-color: greenyellow;
+    border-color: yellowgreen;
   }
   nav div.nav-container > div:nth-of-type(5n+3) .slide:hover, nav div.nav-container > div:nth-of-type(5n+3) a:hover {
-    color: greenyellow;
+    color: yellowgreen;
   }
   
   nav div.nav-container > div:nth-of-type(5n+3) .slide ~ .child-menu, nav div.nav-container > div:nth-of-type(5n+3) a ~ .child-menu {
-    background-color: greenyellow;
+    background-color: yellowgreen;
   }
   nav div.nav-container > div:nth-of-type(5n+3) input:checked ~ label, nav div.nav-container > div:nth-of-type(5n+3) .slide.active ~ label {
-    color: greenyellow;
+    color: yellowgreen;
   }
   /* end of yellow */
+  nav div.nav-container > div:nth-of-type(5n+3) .slide, nav div.nav-container > div:nth-of-type(5n+3) a {
+    border-color: yellowgreen;
+  }
+  nav div.nav-container > div:nth-of-type(5n+3) .slide:hover, nav div.nav-container > div:nth-of-type(5n+3) a:hover {
+    color: yellowgreen;
+  }
+  
+  nav div.nav-container > div:nth-of-type(5n+3) .slide ~ .child-menu, nav div.nav-container > div:nth-of-type(5n+3) a ~ .child-menu {
+    background-color: yellowgreen;
+  }
+  nav div.nav-container > div:nth-of-type(5n+3) input:checked ~ label, nav div.nav-container > div:nth-of-type(5n+3) .slide.active ~ label {
+    color: yellowgreen;
+  }
+  /* yellow */
+  nav div.nav-container > div:nth-of-type(5n+3) .slide, nav div.nav-container > div:nth-of-type(5n+3) a {
+    border-color: lavender;
+  }
+  nav div.nav-container > div:nth-of-type(5n+4) .slide:hover, nav div.nav-container > div:nth-of-type(5n+3) a:hover {
+    color: lavender;
+  }
+  
+  nav div.nav-container > div:nth-of-type(5n+4) .slide ~ .child-menu, nav div.nav-container > div:nth-of-type(5n+3) a ~ .child-menu {
+    background-color: lavender;
+  }
+  nav div.nav-container > div:nth-of-type(5n+4) input:checked ~ label, nav div.nav-container > div:nth-of-type(5n+3) .slide.active ~ label {
+    color: lavender;
+  }
+  /* end of yellow */
+  nav div.nav-container > div:nth-of-type(5n+4) .slide, nav div.nav-container > div:nth-of-type(5n+3) a {
+    border-color: lavender;
+  }
+  nav div.nav-container > div:nth-of-type(5n+4) .slide:hover, nav div.nav-container > div:nth-of-type(5n+3) a:hover {
+    color: lavender;
+  }
+  
+  nav div.nav-container > div:nth-of-type(5n+4) .slide ~ .child-menu, nav div.nav-container > div:nth-of-type(5n+3) a ~ .child-menu {
+    background-color: lavender;
+  }
+  nav div.nav-container > div:nth-of-type(5n+4) input:checked ~ label, nav div.nav-container > div:nth-of-type(5n+3) .slide.active ~ label {
+    color: lavender;
+  }
   
   nav a, nav label {
     -moz-transition-property: color;
