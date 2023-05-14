@@ -199,7 +199,7 @@ a {
   }
   /* yellow */
   nav div.nav-container > div:nth-of-type(5n+3) .slide, nav div.nav-container > div:nth-of-type(5n+3) a {
-    border-color: lavender;
+    border-color: yellowgreen;
   }
   nav div.nav-container > div:nth-of-type(5n+4) .slide:hover, nav div.nav-container > div:nth-of-type(5n+3) a:hover {
     color: lavender;
